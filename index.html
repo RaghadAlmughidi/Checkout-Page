@@ -1,95 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1,
-  maximum-scale=5"
-    />
 
-    <link rel="icon" href="devchallenges.png" />
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-    <link
-      rel="shortcut icon"
-      type="image/x-icon"
-      href="https://devchallenges.io/"
-    />
+    <title>Checkout Page</title>
+</head>
 
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
-      rel="stylesheet"
-    />
+<body>
 
-    <title>Devchallenges</title>
+    <h1>Checkout</h1>
+    <div class="container">
+        <div class="contact">
+            <div class="contact__p">Contact infomation</div>
+            <form id="contact" method="get">
+                <div class="input-icons">
+                    <i class="material-icons">mail</i>
+                    <label for="email">E-mail</label><br>
+                    <input class="input-field" type="email" id="email" placeholder="Enter your email...">
 
-    <style>
-      body {
-        font-family: "Poppins", sans-serif;
-      }
+                </div>
+                <div class="input-icons">
+                    <i class="material-icons">call</i>
+                    <label for="phone">Phone</label><br>
+                    <input class="input-field" type="number" id="phone" placeholder="Enter your phone...">
 
-      ul {
-        padding-left: 24px;
-      }
+                </div>
+                <div class="contact__sippingAddress">
+                    <div class="contact__p">Shipping address</div>
+                    <div class="input-icons">
+                        <i class="material-icons">  account_circle  </i>
+                        <label for="name">Full name</label><br>
+                        <input class="input-field" type="text" id="name" placeholder="Rodney Cotton">
 
-      li {
-        margin-bottom: 8px;
-      }
+                    </div>
+                    <div class="input-icons">
+                        <i class="material-icons">home</i>
+                        <label for="adress">Address</label><br>
+                        <input class="input-field" type="text" id="Address" placeholder="Your address..">
 
-      .welcome {
-        max-width: 800px;
-        margin: 0 auto;
-      }
+                    </div>
+                    <div class="input-icons">
+                        <i class="material-icons">apartment</i>
+                        <label for="city">City</label><br>
+                        <input class="input-field" type="text" id="city" placeholder="Your city..">
+                    </div>
+                    <div class="contact__sippingAddress--flex">
+                        <div class="input-icons">
+                            <i class="material-icons">public</i>
+                            <label for="Country">Country</label><br>
+                            <input class="input-field" type="" id="Country" placeholder="Your country..">
 
-      .welcome-text {
-        margin-top: 30vh;
-        font-weight: 500;
-      }
+                        </div>
+                        <div class="input-icons">
+                            <i class="material-icons">markunread_mailbox</i>
+                            <label for="postal">Postal code</label><br>
+                            <input class="input-field" type="number" id="postal" placeholder="Your postal code..">
+                        </div>
+                    </div>
+                </div>
+                <input type="checkbox" id="sav-info" value="save-info">
+                <label class="chickbox" for="vehicle1">Save this information for next time</label>
+            </form>
 
-      .welcome-text p {
-        font-size: 1rem;
-        font-weight: 400;
-      }
+            <button type="submit" form="contact">Continue</button>
 
-      .welcome-text h1 {
-        font-size: 1.5rem;
-      }
 
-      .welcome-text a {
-        color: #f7542e;
-      }
-    </style>
-  </head>
-  <body>
-    <div class="welcome">
-      <div class="welcome-text">
-        <h1>
-          Welcome to
-          <a href="https://devchallenges.io/" target="_blank"
-            >devchallenges.io</a
-          >
-        </h1>
-
-        <p>
-          If you have any questions, don't hesitate to ask on Discord. Here are
-          7 general steps to complete the challenge:
-        </p>
-      </div>
-
-      <ul>
-        <li><b>Step 1:</b> Create a new repository on github</li>
-        <li><b>Step 2:</b> Copy resources, README.md to your repository</li>
-        <li>
-          <b>Step 3:</b> Login to Figma to checkout font, color, spacing,..
-        </li>
-        <li><b>Step 4:</b> Complete all user stories</li>
-        <li><b>Step 5:</b> Update README.md</li>
-        <li><b>Step 6:</b> Deploy your app and submit your solution</li>
-        <li>
-          <b>Step 7:</b> Share your solution on Discord, Twitter and other
-          platforms to ask for feedback
-        </li>
-      </ul>
+        </div>
     </div>
-  </body>
+
+
+
+
+
+
+
+
+    <script src=" script.js "></script>
+
+</body>
+
 </html>

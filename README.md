@@ -1,5 +1,5 @@
 <!-- Please update value in the {}  -->
-
+  <i class="material-icons"></i>
 <h1 align="center">{Your project name}</h1>
 
 <div align="center">
