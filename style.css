@@ -156,3 +156,30 @@ hr {
     gap: 12em;
     margin: 1em 0 1em 2.5em;
 }
+
+footer p {
+    color: #BDBDBD;
+    font-size: 14px;
+    margin-top: 15em;
+    text-align: center;
+}
+
+@media (max-width: 469px) {
+    body {
+        width: 100;
+    }
+    .container {
+        flex-direction: column;
+        width: 100%;
+    }
+    .contact {
+        width: 100%;
+        order: 2;
+    }
+    .container__item {
+        width: 100%;
+    }
+    button {
+        margin-bottom: 2em;
+    }
+}
