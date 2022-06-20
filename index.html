@@ -15,59 +15,66 @@
 
     <h1>Checkout</h1>
     <div class="container">
-        <div class="contact">
+        <div class="submit">
             <div class="contact__p">Contact infomation</div>
-            <form id="contact" method="get">
-                <div class="input-icons">
+            <form id="contact" method="get" action="/">
+                <div class="inputicons">
                     <i class="material-icons">mail</i>
                     <label for="email">E-mail</label><br>
                     <input class="input-field" type="email" id="email" placeholder="Enter your email...">
+                    <div class="error"></div>
 
                 </div>
-                <div class="input-icons">
+                <div class="inputicons">
                     <i class="material-icons">call</i>
                     <label for="phone">Phone</label><br>
                     <input class="input-field" type="number" id="phone" placeholder="Enter your phone...">
+                    <div class="error"></div>
 
                 </div>
                 <div class="contact__sippingAddress">
                     <div class="contact__p">Shipping address</div>
-                    <div class="input-icons">
+                    <div class="inputicons">
                         <i class="material-icons">  account_circle  </i>
                         <label for="name">Full name</label><br>
                         <input class="input-field" type="text" id="name" placeholder="Rodney Cotton">
+                        <div class="error"></div>
 
                     </div>
-                    <div class="input-icons">
+                    <div class="inputicons">
                         <i class="material-icons">home</i>
                         <label for="adress">Address</label><br>
                         <input class="input-field" type="text" id="Address" placeholder="Your address..">
-
+                        <div class="error"></div>
                     </div>
-                    <div class="input-icons">
+                    <div class="inputicons">
                         <i class="material-icons">apartment</i>
                         <label for="city">City</label><br>
                         <input class="input-field" type="text" id="city" placeholder="Your city..">
+                        <div class="error"></div>
                     </div>
                     <div class="contact__sippingAddress--flex">
-                        <div class="input-icons">
+                        <div class="inputicons">
                             <i class="material-icons">public</i>
                             <label for="Country">Country</label><br>
                             <input class="input-field" type="" id="Country" placeholder="Your country..">
+                            <div class="error"></div>
 
                         </div>
-                        <div class="input-icons">
+                        <div class="inputicons">
                             <i class="material-icons">markunread_mailbox</i>
                             <label for="postal">Postal code</label><br>
                             <input class="input-field" type="number" id="postal" placeholder="Your postal code..">
+                            <div class="error"></div>
                         </div>
                     </div>
                 </div>
                 <input type="checkbox" id="sav-info" value="save-info">
                 <label class="chickbox" for="vehicle1">Save this information for next time</label>
+
+                <button type="submit" form="contact">Continue</button>
             </form>
 
-            <button type="submit" form="contact">Continue</button>
         </div>
 
         <div class="container__item">
