@@ -17,19 +17,19 @@
     <div class="container">
         <div class="submit">
             <div class="contact__p">Contact infomation</div>
-            <form id="contact" method="get" action="/">
+            <form id="contact" method="get" action="/" name="myForm">
                 <div class="inputicons">
                     <i class="material-icons">mail</i>
                     <label for="email">E-mail</label><br>
-                    <input class="input-field" type="email" id="email" placeholder="Enter your email...">
-                    <div class="error"></div>
+                    <input class="input-field" type="email" name="email" placeholder="Enter your email..." id="contact-mail" onkeyup="validateMail()">
+                    <span id="mailError"></span>
 
                 </div>
                 <div class="inputicons">
                     <i class="material-icons">call</i>
                     <label for="phone">Phone</label><br>
-                    <input class="input-field" type="number" id="phone" placeholder="Enter your phone...">
-                    <div class="error"></div>
+                    <input class="input-field" type="number" id="contact-phone" placeholder="Enter your phone... +966" onkeyup="validatePhone()">
+                    <span id="phoneError"></span>
 
                 </div>
                 <div class="contact__sippingAddress">
@@ -37,42 +37,42 @@
                     <div class="inputicons">
                         <i class="material-icons">  account_circle  </i>
                         <label for="name">Full name</label><br>
-                        <input class="input-field" type="text" id="name" placeholder="Rodney Cotton">
-                        <div class="error"></div>
+                        <input class="input-field" type="text" id="contact-name" placeholder="Rodney Cotton" onkeyup="validateName()">
+                        <span id="nameError"></span>
 
                     </div>
                     <div class="inputicons">
                         <i class="material-icons">home</i>
                         <label for="adress">Address</label><br>
-                        <input class="input-field" type="text" id="Address" placeholder="Your address..">
-                        <div class="error"></div>
+                        <input class="input-field" type="text" id="contact-Address" placeholder="Your address.." onkeyup="validateAddress()">
+                        <span id="addressError"></span>
                     </div>
                     <div class="inputicons">
                         <i class="material-icons">apartment</i>
                         <label for="city">City</label><br>
-                        <input class="input-field" type="text" id="city" placeholder="Your city..">
-                        <div class="error"></div>
+                        <input class="input-field" type="text" id="contact-city" placeholder="Your city.." onkeyup="validateCity()">
+                        <span id="cityError"></span>
                     </div>
                     <div class="contact__sippingAddress--flex">
                         <div class="inputicons">
                             <i class="material-icons">public</i>
                             <label for="Country">Country</label><br>
-                            <input class="input-field" type="" id="Country" placeholder="Your country..">
-                            <div class="error"></div>
+                            <input class="input-field" type="" id="contact-Country" placeholder="Your country.." onkeyup="validateCountry()">
+                            <span id="countryError"></span>
 
                         </div>
                         <div class="inputicons">
                             <i class="material-icons">markunread_mailbox</i>
                             <label for="postal">Postal code</label><br>
-                            <input class="input-field" type="number" id="postal" placeholder="Your postal code..">
-                            <div class="error"></div>
+                            <input class="input-field" type="number" id="contact-postal" placeholder="only numbers" onkeyup="validatePostal()">
+                            <span id="postalError"></span>
                         </div>
                     </div>
                 </div>
                 <input type="checkbox" id="sav-info" value="save-info">
                 <label class="chickbox" for="vehicle1">Save this information for next time</label>
 
-                <button type="submit" form="contact">Continue</button>
+                <button type="submit" name="myForm" form="contact">Continue</button>
             </form>
 
         </div>
